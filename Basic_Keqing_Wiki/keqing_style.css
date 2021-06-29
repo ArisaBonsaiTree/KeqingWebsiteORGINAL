@@ -1,0 +1,126 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 6em;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons button{
+    font-size: 1em;;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #1fdec8;
+    border-radius: 20% 20% 0 0;
+    color: white;
+}
+
+h2{
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+
+
+
+
+.johnImg{
+    width: 17em;
+    height: 20em;
+}
+/* https://www.w3schools.com/css/css_grid.asp */
+.grid-containers {
+    /* HTML elements becomes a grid container Can use inline-grid too!*/
+    display: grid;
+
+    /* HORIZONTALLY alignjustify-content: space-evenly; */
+    /* VERTICALLY align align-content */
+    
+
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: 80px 200px 80px; */
+    /* grid-gap: 10px; Gives all side 'padding' --> grid-row/column-gap */
+
+    /* Extra stuff, giving it background color + some padding to view it */
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    /* Color of the square */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* Padding for inside the number */
+    padding: 20px;
+    /* Size of the font */
+    font-size: 30px;
+    /* Place the text in the center */
+    text-align: center;
+}
+
+
+.item1 { 
+    grid-area: header; 
+}
+.item2 { 
+    grid-area: menu; 
+}
+.item3 { 
+    grid-area: main; 
+}
+.item4 { 
+    grid-area: right; 
+}
+.item5 { 
+    grid-area: footer; 
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+
+    grid-gap: 10px;
+    
+    background-color: #2196F3;
+    
+    padding: 10px;
+}
+/* > is a child selector select all elements that are children of a specified element */
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* 
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+ */

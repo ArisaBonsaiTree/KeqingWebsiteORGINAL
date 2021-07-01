@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    background-color: aquamarine;
+
+    /* The standard for flex display */
+    /* display: flex;  */
+    /* Horizontal */
+    justify-content: center;
+    /* Vertical */
+    align-items: center;
+    /* VH = View point height Always the height of the window no matter how high!*/
+    min-height: 100vh;
+}
+
+.buttons button{
+    font-size: 1em;;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #1fdec8;
+    border-radius: 20% 20% 0 0;
+    color: white;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+.flexbox {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+
+    /* What allows us to play around with the boxes */
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+}
+
+.text{
+    padding: 0 5%;
+    /* Let the text breath */
+    line-height: 2;
+}
+
+.name-nick{
+    background-color: #666699;
+    text-align: center;
+}
+
+.nickName{
+    padding: 0.5rem;
+}
+
+.keqing-pic-portion{
+    border: 1px solid gray;
+}
+
+/* Affects all images and gives it some limits */
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
